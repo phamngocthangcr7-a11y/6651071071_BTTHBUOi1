@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AEGIS Tactical & Defense Systems - Kho Khí Tài & Vũ Khí Quân Sự Tối Tân">
+    <meta name="keywords" content="Aegis, kho vũ khí, súng trường, UAV, pháo binh, tên lửa, phòng không">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kho Khí Tài Quốc Phòng | AEGIS DEFENSE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/responsive.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+        <div class="loader-text">AEGIS DEFENSE COMMAND INITIALIZING...</div>
+    </div>
+
+    <!-- Humberger Menu Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="Aegis Defense Logo"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <span><i class="fa-solid fa-flag"></i> Tiếng Việt</span>
+            </div>
+            <div class="header__top__right__auth" style="margin-top: 10px;">
+                <a href="checkout.html"><i class="fa-solid fa-user-shield"></i> Cổng Sĩ Quan Mua Sắm</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li class="active"><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                <li><a href="#">TRANG CON</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                        <li><a href="checkout.html">Thủ Tục Thanh Toán</a></li>
+                        <li><a href="blog-details.html?id=1">Chi Tiết Tin Quân Sự</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-satellite-dish"></i> command@aegis-defense.mil</li>
+                                <li><i class="fa-solid fa-truck-plane"></i> Miễn phí vận tải quân sự chuyên dụng từ $100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <span><i class="fa-solid fa-shield"></i> Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt (VN)</a></li>
+                                    <li><a href="#">English (NATO)</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="checkout.html"><i class="fa-solid fa-id-badge"></i> Đăng Nhập Sĩ Quan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li class="active"><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                            <li><a href="#">TRANG CON</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                                    <li><a href="checkout.html">Ký Kết Thanh Toán</a></li>
+                                    <li><a href="blog-details.html?id=1">Báo Cáo Tác Chiến</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Normal Begin -->
+    <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>DANH MỤC KHÍ TÀI</span>
+                            <i class="fa-solid fa-angle-down arrow_down"></i>
+                        </div>
+                        <ul>
+                            <li><a href="shop-grid.html?category=air-defense"><i class="fa-solid fa-radar"></i> Phòng không & Radar</a></li>
+                            <li><a href="shop-grid.html?category=missiles"><i class="fa-solid fa-rocket"></i> Tên lửa & Pháo phản lực</a></li>
+                            <li><a href="shop-grid.html?category=uav"><i class="fa-solid fa-plane-up"></i> UAV Trinh sát & Drone AI</a></li>
+                            <li><a href="shop-grid.html?category=stealth-fighter"><i class="fa-solid fa-jet-fighter"></i> Tiêm kích Tàng hình Gen 5</a></li>
+                            <li><a href="shop-grid.html?category=mbt"><i class="fa-solid fa-shield-halved"></i> Xe tăng Chủ lực (MBT)</a></li>
+                            <li><a href="shop-grid.html?category=armored-artillery"><i class="fa-solid fa-truck-monster"></i> Thiết giáp & Pháo tự hành</a></li>
+                            <li><a href="shop-grid.html?category=infantry-ngsw"><i class="fa-solid fa-gun"></i> Vũ khí Cá nhân (NGSW)</a></li>
+                            <li><a href="shop-grid.html?category=combat-robot"><i class="fa-solid fa-robot"></i> Robot Chiến đấu AI</a></li>
+                            <li><a href="shop-grid.html?category=electronic-warfare"><i class="fa-solid fa-bolt-lightning"></i> Tác chiến Điện tử & Laser</a></li>
+                            <li><a href="shop-grid.html?category=night-vision"><i class="fa-solid fa-glasses"></i> Kính Nhìn đêm & Ảnh nhiệt</a></li>
+                            <li><a href="shop-grid.html?category=tactical-gear"><i class="fa-solid fa-vest"></i> Giáp Chống đạn & Đặc nhiệm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="shop-grid.html" method="GET">
+                                <div class="hero__search__categories">
+                                    <select name="category">
+                                        <option value="all">Tất cả danh mục</option>
+                                        <option value="air-defense">Phòng không & Tên lửa</option>
+                                        <option value="uav">UAV & Drone Cảm tử</option>
+                                        <option value="mbt">Tăng thiết giáp</option>
+                                        <option value="infantry-ngsw">Vũ khí Bộ binh NGSW</option>
+                                        <option value="electronic-warfare">Tác chiến Laser & Radar</option>
+                                    </select>
+                                </div>
+                                <input type="text" id="shop-search-input" name="search" placeholder="Nhập tên vũ khí, mã định danh NATO, quốc gia..." autocomplete="off">
+                                <button type="submit" class="site-btn">TÌM KIẾM</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>1900 6651</h5>
+                                <span>HỖ TRỢ TÁC CHIẾN 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Normal End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/hero-banner.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>KHO KHÍ TÀI QUỐC PHÒNG</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">TRANG CHỦ</a>
+                            <span>KHO KHÍ TÀI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Left -->
+                <div class="col-lg-3 col-md-5">
+                    <div class="sidebar">
+                        <div class="sidebar__item">
+                            <h4>Danh Mục Khí Tài</h4>
+                            <ul id="sidebar-categories-list">
+                                <li class="active"><a href="shop-grid.html">Tất Cả Khí Tài <span>(18)</span></a></li>
+                                <li><a href="shop-grid.html?category=air-defense">Phòng không & Tên lửa <span>(4)</span></a></li>
+                                <li><a href="shop-grid.html?category=missiles">Pháo phản lực & Tên lửa <span>(3)</span></a></li>
+                                <li><a href="shop-grid.html?category=uav">UAV & Drone Cảm tử <span>(3)</span></a></li>
+                                <li><a href="shop-grid.html?category=stealth-fighter">Tiêm kích Tàng hình <span>(2)</span></a></li>
+                                <li><a href="shop-grid.html?category=mbt">Xe tăng Chủ lực (MBT) <span>(3)</span></a></li>
+                                <li><a href="shop-grid.html?category=armored-artillery">Thiết giáp & Pháo binh <span>(2)</span></a></li>
+                                <li><a href="shop-grid.html?category=infantry-ngsw">Vũ khí Cá nhân NGSW <span>(2)</span></a></li>
+                                <li><a href="shop-grid.html?category=combat-robot">Robot Chiến đấu AI <span>(2)</span></a></li>
+                                <li><a href="shop-grid.html?category=electronic-warfare">Tác chiến Laser & EW <span>(2)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Price Range Slider -->
+                        <div class="sidebar__item">
+                            <h4>Lọc Theo Ngân Sách</h4>
+                            <div class="price-range-wrap">
+                                <div class="price-input" style="display: flex; gap: 8px; margin-bottom: 15px;">
+                                    <input type="text" id="minamount" value="$5,000" style="width: 50%;">
+                                    <input type="text" id="maxamount" value="$100,000,000" style="width: 50%;">
+                                </div>
+                                <input type="range" id="price-slider-range" min="5000" max="100000000" step="50000" value="100000000" style="width: 100%; accent-color: #4a6b22;">
+                                <div style="display: flex; justify-content: space-between; font-size: 11px; color: #64748b; margin-top: 5px;">
+                                    <span>$5,000</span>
+                                    <span>$100M+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Country Filter -->
+                        <div class="sidebar__item">
+                            <h4>Quốc Gia Sản Xuất</h4>
+                            <div class="sidebar__item__country" style="display: flex; flex-direction: column; gap: 8px;">
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="ALL" checked> Tất cả quốc gia</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="US"> Hoa Kỳ (Lockheed, Raytheon, GA)</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="DE"> Đức (Rheinmetall Landsysteme)</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="IL"> Israel (Rafael Advanced Defense)</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="RU"> Nga (Almaz-Antey)</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="KR"> Hàn Quốc (Hyundai Rotem)</label>
+                                <label style="cursor: pointer;"><input type="radio" name="country_filter" value="FR"> Pháp (KNDS Nexter)</label>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Latest Products -->
+                        <div class="sidebar__item">
+                            <div class="latest-product__text">
+                                <h4>Khí Tài Mới Nhất</h4>
+                                <div class="latest-product__slider">
+                                    <div class="latest-product__slider__item">
+                                        <a href="shop-details.html?id=1" class="latest-product__item">
+                                            <div class="latest-product__item__pic">
+                                                <img src="Images/weapon-1.jpg" alt="Patriot PAC-3">
+                                            </div>
+                                            <div class="latest-product__item__text">
+                                                <h6>Patriot PAC-3 MSE</h6>
+                                                <span>$4,100,000</span>
+                                            </div>
+                                        </a>
+                                        <a href="shop-details.html?id=4" class="latest-product__item">
+                                            <div class="latest-product__item__pic">
+                                                <img src="Images/weapon-4.jpg" alt="Iron Beam">
+                                            </div>
+                                            <div class="latest-product__item__text">
+                                                <h6>Laser Iron Beam 100kW</h6>
+                                                <span>$2,900,000</span>
+                                            </div>
+                                        </a>
+                                        <a href="shop-details.html?id=13" class="latest-product__item">
+                                            <div class="latest-product__item__pic">
+                                                <img src="Images/weapon-13.jpg" alt="SIG XM7">
+                                            </div>
+                                            <div class="latest-product__item__text">
+                                                <h6>Súng trường XM7 6.8mm</h6>
+                                                <span>$9,500</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Grid Area -->
+                <div class="col-lg-9 col-md-7">
+                    <!-- Sale Off Section -->
+                    <div class="product__discount">
+                        <div class="section-title product__discount__title">
+                            <h2>Ưu Đãi Hợp Đồng Quốc Phòng (Sale Off)</h2>
+                        </div>
+                        <div class="row" id="saleoff-products-row">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Filter Bar -->
+                    <div class="filter__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="filter__sort">
+                                    <span>Sắp xếp:</span>
+                                    <select id="grid-sort-select">
+                                        <option value="default">Mặc định (Tiêu chuẩn)</option>
+                                        <option value="price-asc">Giá: Thấp đến Cao</option>
+                                        <option value="price-desc">Giá: Cao đến Thấp</option>
+                                        <option value="name-asc">Tên vũ khí: A - Z</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="filter__found">
+                                    <h6>Tìm thấy: <span id="products-count-found">18</span> khí tài</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3">
+                                <div class="filter__right text-end">
+                                    <span style="font-size: 13px; color: #64748b;"><i class="fa-solid fa-shield-halved"></i> Chuẩn Định Danh NATO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Products Grid -->
+                    <div class="row" id="main-products-grid">
+                        <!-- Loaded dynamically from PRODUCTS_DATA -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="product__pagination" id="grid-pagination">
+                        <a href="javascript:void(0)" class="active page-num" data-page="1">1</a>
+                        <a href="javascript:void(0)" class="page-num" data-page="2">2</a>
+                        <a href="javascript:void(0)" class="page-next"><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Chỉ huy sở:</b> Phân hiệu ĐH GTVT tại TP.HCM (UTC2)</li>
+                            <li><b>Địa chỉ:</b> Số 450-451 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><b>Đường dây nóng:</b> 1900 6651</li>
+                            <li><b>Mật mã liên lạc:</b> command@aegis-defense.mil</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên Kết Chiến Lược</h6>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ Tác Chiến</a></li>
+                            <li><a href="shop-grid.html">Kho Khí Tài Quốc Phòng</a></li>
+                            <li><a href="shoping-cart.html">Giỏ Hàng Quân Sự</a></li>
+                            <li><a href="checkout.html">Ký Hợp Đồng Quốc Phòng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Bản Tin Tình Báo Quốc Phòng</h6>
+                        <p>Đăng ký nhận thông báo về các lô khí tài mới nhất.</p>
+                        <form action="javascript:void(0)" onsubmit="CartEngine.showToast('Đã đăng ký nhận bản tin quân sự thành công!', 'success')">
+                            <input type="email" placeholder="Nhập địa chỉ email sĩ quan..." required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Bài tập thực hành Thiết kế Web - <a href="https://utc2.edu.vn" target="_blank">UTC2</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts Section -->
+    <script src="Scripts/products-data.js"></script>
+    <script src="Scripts/cart-engine.js"></script>
+    <script src="Scripts/main.js"></script>
+
+    <!-- Page Specific Script for shop-grid.html -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Read URL Params
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('category');
+            const searchParam = urlParams.get('search');
+
+            let currentProducts = [...PRODUCTS_DATA];
+            let currentPage = 1;
+            const itemsPerPage = 9;
+
+            // Render Sale Off Row (Top 3 discounted items)
+            const saleOffContainer = document.getElementById('saleoff-products-row');
+            if (saleOffContainer) {
+                const discounted = PRODUCTS_DATA.filter(p => p.discount > 0).slice(0, 3);
+                saleOffContainer.innerHTML = discounted.map(p => `
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product__discount__item">
+                            <div class="product__discount__item__pic set-bg" style="background-image: url('${p.image}')">
+                                <div class="product__discount__percent">-${p.discount}%</div>
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="${p.id}"><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="quick-view-btn" data-id="${p.id}"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="${p.id}"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <span>${p.category}</span>
+                                <h6><a href="shop-details.html?id=${p.id}">${p.name}</a></h6>
+                                <h5>${formatCurrency(p.price)} <span>${formatCurrency(p.oldPrice)}</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Sync sidebar category active state
+            function syncSidebarCategories() {
+                const sidebarList = document.querySelectorAll('#sidebar-categories-list li');
+                sidebarList.forEach(li => {
+                    const a = li.querySelector('a');
+                    if (!a) return;
+                    const href = a.getAttribute('href') || '';
+                    if (categoryParam && categoryParam !== 'all') {
+                        li.classList.toggle('active', href.includes('category=' + categoryParam));
+                    } else {
+                        li.classList.toggle('active', href === 'shop-grid.html' || href === 'shop-grid.html?category=all');
+                    }
+                });
+            }
+
+            // Dynamic Pagination Renderer
+            function renderPagination(totalPages, activePage) {
+                const pagContainer = document.getElementById('grid-pagination');
+                if (!pagContainer) return;
+
+                if (totalPages <= 1) {
+                    pagContainer.innerHTML = '';
+                    return;
+                }
+
+                let html = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    html += `<a href="javascript:void(0)" class="page-num ${i === activePage ? 'active' : ''}" data-page="${i}">${i}</a>`;
+                }
+                if (activePage < totalPages) {
+                    html += `<a href="javascript:void(0)" class="page-next" data-page="${activePage + 1}"><i class="fa-solid fa-angle-right"></i></a>`;
+                }
+                pagContainer.innerHTML = html;
+
+                pagContainer.querySelectorAll('a').forEach(btn => {
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const p = parseInt(this.getAttribute('data-page'), 10);
+                        if (p && p !== currentPage) {
+                            renderPage(p);
+                            window.scrollTo({ top: 350, behavior: 'smooth' });
+                        }
+                    });
+                });
+            }
+
+            // Filter logic
+            function applyFilters() {
+                let filtered = [...PRODUCTS_DATA];
+
+                // URL Category filter
+                if (categoryParam && categoryParam !== 'all') {
+                    filtered = filtered.filter(p => p.categorySlug === categoryParam);
+                }
+
+                // URL Search filter
+                if (searchParam) {
+                    const q = searchParam.toLowerCase();
+                    filtered = filtered.filter(p => 
+                        p.name.toLowerCase().includes(q) ||
+                        (p.natoCode && p.natoCode.toLowerCase().includes(q)) ||
+                        p.origin.toLowerCase().includes(q)
+                    );
+                    const searchInput = document.getElementById('shop-search-input');
+                    if (searchInput) searchInput.value = searchParam;
+                }
+
+                // Country Radio filter
+                const selectedCountry = document.querySelector('input[name="country_filter"]:checked');
+                if (selectedCountry && selectedCountry.value !== 'ALL') {
+                    filtered = filtered.filter(p => p.countryCode === selectedCountry.value);
+                }
+
+                // Price range filter
+                const maxPriceVal = parseFloat(document.getElementById('price-slider-range').value);
+                filtered = filtered.filter(p => p.price <= maxPriceVal);
+
+                // Sort logic
+                const sortMode = document.getElementById('grid-sort-select').value;
+                if (sortMode === 'price-asc') {
+                    filtered.sort((a, b) => a.price - b.price);
+                } else if (sortMode === 'price-desc') {
+                    filtered.sort((a, b) => b.price - a.price);
+                } else if (sortMode === 'name-asc') {
+                    filtered.sort((a, b) => a.name.localeCompare(b.name));
+                }
+
+                currentProducts = filtered;
+                document.getElementById('products-count-found').textContent = currentProducts.length;
+                renderPage(1);
+            }
+
+            function renderPage(page) {
+                currentPage = page;
+                const grid = document.getElementById('main-products-grid');
+                if (!grid) return;
+
+                const start = (page - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+                const pageItems = currentProducts.slice(start, end);
+
+                if (pageItems.length === 0) {
+                    grid.innerHTML = `
+                        <div class="col-lg-12 text-center" style="padding: 60px 0;">
+                            <i class="fa-solid fa-radar fa-3x" style="color: #94a3b8; margin-bottom: 15px;"></i>
+                            <h4 style="color: #475569;">Không tìm thấy khí tài phù hợp với tiêu chí lọc</h4>
+                            <p style="color: #94a3b8;">Vui lòng thử điều chỉnh lại tầm giá hoặc chọn tất cả quốc gia sản xuất.</p>
+                            <a href="shop-grid.html" class="primary-btn" style="margin-top: 15px;">XÓA TẤT CẢ BỘ LỌC</a>
+                        </div>
+                    `;
+                    const pagContainer = document.getElementById('grid-pagination');
+                    if (pagContainer) pagContainer.innerHTML = '';
+                    return;
+                }
+
+                grid.innerHTML = pageItems.map(p => `
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" style="background-image: url('${p.image}')">
+                                <span class="product__badge">${p.natoCode || 'NATO SPEC'}</span>
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="${p.id}" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="quick-view-btn" data-id="${p.id}" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="${p.id}" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6><a href="shop-details.html?id=${p.id}">${p.name}</a></h6>
+                                <h5>${formatCurrency(p.price)} ${p.oldPrice ? `<span>${formatCurrency(p.oldPrice)}</span>` : ''}</h5>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                const totalPages = Math.ceil(currentProducts.length / itemsPerPage);
+                renderPagination(totalPages, page);
+            }
+
+            // Events
+            const slider = document.getElementById('price-slider-range');
+            if (slider) {
+                slider.addEventListener('input', function () {
+                    document.getElementById('maxamount').value = formatCurrency(this.value);
+                    applyFilters();
+                });
+            }
+
+            document.querySelectorAll('input[name="country_filter"]').forEach(radio => {
+                radio.addEventListener('change', applyFilters);
+            });
+
+            const sortSelect = document.getElementById('grid-sort-select');
+            if (sortSelect) {
+                sortSelect.addEventListener('change', applyFilters);
+            }
+
+            syncSidebarCategories();
+            applyFilters();
+        });
+    </script>
+</body>
+
+</html>

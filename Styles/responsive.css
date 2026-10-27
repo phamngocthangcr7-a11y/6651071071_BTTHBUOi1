@@ -1,0 +1,264 @@
+/*  ---------------------------------------------------
+    Template Name: AEGIS TACTICAL & DEFENSE SYSTEMS
+    File: responsive.css
+    Responsive Breakpoints for Mobile, Tablet & Desktop
+---------------------------------------------------------  */
+
+/* Medium Device : 1200px */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Medium Device : 992px to 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header__menu ul li {
+        margin-right: 20px;
+    }
+
+    .hero__search__form {
+        width: 470px;
+    }
+
+    .hero__search__categories {
+        width: 35%;
+    }
+
+    .hero__search__form input {
+        width: 65%;
+    }
+
+    .categories__item {
+        min-width: calc(33.333% - 15px);
+    }
+}
+
+/* Tablet Device : 768px to 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__cart {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .humberger__open {
+        display: block;
+    }
+
+    .header__top {
+        display: none;
+    }
+
+    .hero__categories {
+        margin-bottom: 30px;
+    }
+
+    .hero__search__form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero__search__phone {
+        float: none;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .categories__item {
+        min-width: calc(50% - 15px);
+    }
+
+    .hero__item {
+        padding-left: 40px;
+        height: 380px;
+    }
+
+    .hero__text h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .sidebar {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .shoping__cart__table {
+        overflow-x: auto;
+    }
+
+    .shoping__cart__table table {
+        min-width: 650px;
+    }
+
+    .product__details__pic {
+        margin-bottom: 40px;
+    }
+}
+
+/* Wide Mobile : 480px to 767px */
+@media (max-width: 767px) {
+    .header__top {
+        display: none;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__cart {
+        text-align: left;
+        padding: 15px 0 0 0;
+    }
+
+    .humberger__open {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .hero__categories {
+        margin-bottom: 30px;
+    }
+
+    .hero__search__form {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .hero__search__categories {
+        display: none;
+    }
+
+    .hero__search__form input {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .hero__search__phone {
+        float: none;
+        margin-bottom: 25px;
+    }
+
+    .hero__item {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .hero__text h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .hero__text .hero-btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categories__item {
+        min-width: 100%;
+    }
+
+    .categories__slider__prev,
+    .categories__slider__next {
+        display: none;
+    }
+
+    .featured__controls ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .shoping__cart__table {
+        overflow-x: auto;
+    }
+
+    .shoping__cart__table table {
+        min-width: 600px;
+    }
+
+    .shoping__discount form input {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .product__details__pic {
+        margin-bottom: 40px;
+    }
+
+    .product__details__text {
+        padding-left: 0;
+    }
+
+    .product__details__tab .nav-tabs .nav-link {
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+
+    .footer__widget ul {
+        width: 100%;
+        float: none;
+    }
+
+    .footer__widget form input {
+        width: 100%;
+    }
+
+    .footer__widget form button {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .aegis-modal-dialog {
+        padding: 20px;
+    }
+
+    .aegis-toast {
+        min-width: auto;
+        max-width: 90vw;
+    }
+}
+
+/* Small Mobile : under 480px */
+@media (max-width: 479px) {
+    .hero__text h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    .breadcrumb__text h2 {
+        font-size: 26px;
+    }
+
+    .shoping__cart__btns .primary-btn.cart-btn {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .product__details__quantity {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .heart-icon-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

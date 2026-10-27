@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AEGIS Tactical & Defense Systems - Ký Kết Hợp Đồng & Thanh Toán Khí Tài">
+    <meta name="keywords" content="Aegis, hợp đồng quốc phòng, thanh toán, tín dụng quân sự">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanh Toán & Hợp Đồng Quốc Phòng | AEGIS DEFENSE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/responsive.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+        <div class="loader-text">AEGIS DEFENSE COMMAND INITIALIZING...</div>
+    </div>
+
+    <!-- Humberger Menu Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="Aegis Defense Logo"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                <li class="active"><a href="#">TRANG CON</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                        <li><a href="checkout.html">Thủ Tục Thanh Toán</a></li>
+                        <li><a href="blog-details.html?id=1">Chi Tiết Tin Quân Sự</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-satellite-dish"></i> command@aegis-defense.mil</li>
+                                <li><i class="fa-solid fa-truck-plane"></i> Miễn phí vận tải quân sự chuyên dụng từ $100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <span><i class="fa-solid fa-shield"></i> Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt (VN)</a></li>
+                                    <li><a href="#">English (NATO)</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="checkout.html"><i class="fa-solid fa-id-badge"></i> Đăng Nhập Sĩ Quan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                            <li class="active"><a href="#">TRANG CON</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                                    <li><a href="checkout.html">Ký Kết Thanh Toán</a></li>
+                                    <li><a href="blog-details.html?id=1">Báo Cáo Tác Chiến</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/hero-banner.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>THỦ TỤC THANH TOÁN QUỐC PHÒNG</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">TRANG CHỦ</a>
+                            <span>THANH TOÁN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="checkout__form">
+                <h4>THÔNG TIN ĐƠN VỊ TIẾP NHẬN & HỢP ĐỒNG KHÍ TÀI</h4>
+                <form id="defense-checkout-form" onsubmit="event.preventDefault(); submitDefenseOrder();">
+                    <div class="row">
+                        <!-- Left form fields -->
+                        <div class="col-lg-8 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Họ tên Sĩ quan / Đại diện mua sắm<span>*</span></p>
+                                        <input type="text" id="officer-name" placeholder="Ví dụ: Đại tá Nguyễn Văn A" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Cấp bậc & Chức vụ<span>*</span></p>
+                                        <input type="text" id="officer-rank" placeholder="Ví dụ: Cục trưởng Cục Trang bị" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Quốc gia / Lực lượng Tiếp nhận<span>*</span></p>
+                                <select id="recipient-nation" class="form-control" style="height: 46px; border: 1px solid #e5e7eb; margin-bottom: 20px;">
+                                    <option value="VN">Việt Nam (Bộ Quốc phòng / Quân đội Nhân dân)</option>
+                                    <option value="NATO">Khối Liên minh Quân sự Bắc Đại Tây Dương (NATO)</option>
+                                    <option value="US">Bộ Quốc phòng Hợp chủng quốc Hoa Kỳ (DoD)</option>
+                                    <option value="EU">Lực lượng Phòng vệ Liên minh Châu Âu (EU Battlegroups)</option>
+                                    <option value="OTHER">Quốc gia Liên kết Chiến lược Đã Phê Duyệt</option>
+                                </select>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Căn cứ Quân sự / Cảng Tiếp nhận Bàn giao<span>*</span></p>
+                                <input type="text" id="base-address" placeholder="Tên căn cứ, vị trí tọa độ chiến lược, hoặc cảng nhận hàng" required>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Tỉnh / Thành phố / Khu vực Tác chiến<span>*</span></p>
+                                <input type="text" id="base-city" placeholder="Ví dụ: TP. Thủ Đức, TP.HCM hoặc Tọa độ Căn cứ" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Kênh Liên lạc Vệ tinh / Hotline Quân sự<span>*</span></p>
+                                        <input type="tel" id="officer-phone" placeholder="Số điện thoại hoặc mã vô tuyến" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Hòm thư Điện tử Mã hóa Quân sự<span>*</span></p>
+                                        <input type="email" id="officer-email" placeholder="email@defense.mil.gov" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Ghi chú Vận chuyển Chiến thuật & Bảo mật (Tùy chọn)</p>
+                                <textarea id="delivery-notes" placeholder="Yêu cầu về đội bay vận tải hộ tống, chế độ giữ bí mật lô hàng, quy cách đóng gói chống ẩm và chống va đập..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Right Summary & Payment options -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4>HỢP ĐỒNG CỦA BẠN</h4>
+                                <div class="checkout__order__products">Khí tài <span>Thành tiền</span></div>
+                                <ul id="checkout-items-list">
+                                    <!-- Rendered dynamically -->
+                                </ul>
+                                <div class="checkout__order__subtotal">Tạm tính <span id="checkout-subtotal">$0.00</span></div>
+                                <div class="checkout__order__subtotal" style="color: #16a34a;">Giảm giá ưu đãi <span id="checkout-discount">-$0.00</span></div>
+                                <div class="checkout__order__subtotal">Vận tải quân sự <span id="checkout-shipping">Miễn phí</span></div>
+                                <div class="checkout__order__total">TỔNG NGÂN SÁCH <span id="checkout-grandtotal">$0.00</span></div>
+
+                                <h5 style="font-weight: 800; font-size: 15px; margin: 20px 0 10px 0; color: #1e293b;">PHƯƠNG THỨC THANH TOÁN</h5>
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment-bank">
+                                        <input type="radio" id="payment-bank" name="payment_method" value="bank" checked>
+                                        Chuyển khoản Ngân hàng Quân đội (SWIFT/Military Wire)
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment-lc">
+                                        <input type="radio" id="payment-lc" name="payment_method" value="lc">
+                                        Tín dụng thư Không thể hủy ngang (Irrevocable L/C)
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment-grant">
+                                        <input type="radio" id="payment-grant" name="payment_method" value="grant">
+                                        Bảo lãnh Ngân sách Viện trợ Quốc phòng (FMS/Grant)
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="site-btn" style="width: 100%; margin-top: 15px;">
+                                    <i class="fa-solid fa-file-signature"></i> XÁC NHẬN KÝ KẾT HỢP ĐỒNG
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
+
+    <!-- Electronic Defense Contract Modal -->
+    <div id="contract-modal" class="aegis-modal-overlay">
+        <div class="aegis-modal-dialog" style="max-width: 800px;">
+            <button class="aegis-modal-close" onclick="closeContractModal()">&times;</button>
+            <div style="text-align: center; border-bottom: 2px solid #4a6b22; padding-bottom: 15px; margin-bottom: 20px;">
+                <img src="Images/logo.svg" alt="Aegis Logo" style="height: 50px; margin-bottom: 10px;">
+                <h3 style="font-size: 20px; font-weight: 800; color: #0f172a; text-transform: uppercase;">HỢP ĐỒNG CUNG ỨNG VŨ KHÍ & KHÍ TÀI QUỐC PHÒNG</h3>
+                <span id="modal-contract-id" style="font-family: var(--font-mono); font-size: 13px; color: #d97706; font-weight: 700;">HỢP ĐỒNG SỐ: NATO-AGY-2026-0892</span>
+            </div>
+
+            <div id="contract-details-body" style="font-size: 14px; line-height: 22px;">
+                <!-- Populated dynamically -->
+            </div>
+
+            <div style="margin-top: 25px; text-align: center; border-top: 1px solid #e5e7eb; padding-top: 20px;">
+                <button type="button" class="site-btn" onclick="window.print();"><i class="fa-solid fa-print"></i> IN BẢN HỢP ĐỒNG NÀY</button>
+                <a href="index.html" class="primary-btn" style="background: #475569; margin-left: 10px;">VỀ TRANG CHỦ TÁC CHIẾN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Chỉ huy sở:</b> Phân hiệu ĐH GTVT tại TP.HCM (UTC2)</li>
+                            <li><b>Địa chỉ:</b> Số 450-451 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><b>Đường dây nóng:</b> 1900 6651</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên Kết Chiến Lược</h6>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ Tác Chiến</a></li>
+                            <li><a href="shop-grid.html">Kho Khí Tài Quốc Phòng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Bảo Mật Hợp Đồng</h6>
+                        <p>Dữ liệu giao dịch được mã hóa lượng tử đa lớp tiêu chuẩn quân sự.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Bài tập thực hành Thiết kế Web - <a href="https://utc2.edu.vn" target="_blank">UTC2</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts Section -->
+    <script src="Scripts/products-data.js"></script>
+    <script src="Scripts/cart-engine.js"></script>
+    <script src="Scripts/main.js"></script>
+
+    <!-- Page Specific Script for checkout.html -->
+    <script>
+        function renderCheckoutPage() {
+            const listEl = document.getElementById('checkout-items-list');
+            const cartItems = CartEngine.getCart();
+
+            if (!listEl) return;
+
+            if (cartItems.length === 0) {
+                listEl.innerHTML = '<li style="color: #94a3b8;">Không có khí tài nào trong giỏ hàng.</li>';
+            } else {
+                listEl.innerHTML = cartItems.map(item => {
+                    const p = getProductById(item.id);
+                    if (!p) return '';
+                    return `
+                        <li>
+                            ${p.name} (x${item.quantity})
+                            <span>${formatCurrency(p.price * item.quantity)}</span>
+                        </li>
+                    `;
+                }).join('');
+            }
+
+            const totals = CartEngine.getCartTotals();
+            document.getElementById('checkout-subtotal').textContent = formatCurrency(totals.subtotal);
+            document.getElementById('checkout-discount').textContent = `-${formatCurrency(totals.discountAmount)}`;
+            document.getElementById('checkout-shipping').textContent = totals.shipping === 0 ? 'Miễn phí' : formatCurrency(totals.shipping);
+            document.getElementById('checkout-grandtotal').textContent = formatCurrency(totals.grandTotal);
+        }
+
+        function submitDefenseOrder() {
+            const cartItems = CartEngine.getCart();
+            if (cartItems.length === 0) {
+                CartEngine.showToast('Kho giỏ hàng của bạn đang trống! Vui lòng chọn vũ khí trước.', 'error');
+                return;
+            }
+
+            const officerName = document.getElementById('officer-name').value;
+            const officerRank = document.getElementById('officer-rank').value;
+            const nation = document.getElementById('recipient-nation').value;
+            const baseAddress = document.getElementById('base-address').value;
+            const baseCity = document.getElementById('base-city').value;
+            const officerPhone = document.getElementById('officer-phone').value;
+            const officerEmail = document.getElementById('officer-email').value;
+            const notes = document.getElementById('delivery-notes').value;
+
+            const contractId = 'NATO-AGY-2026-' + Math.floor(1000 + Math.random() * 9000);
+            const totals = CartEngine.getCartTotals();
+
+            // Populate Modal Body
+            const modalBody = document.getElementById('contract-details-body');
+            document.getElementById('modal-contract-id').textContent = `MÃ HỢP ĐỒNG: ${contractId}`;
+
+            modalBody.innerHTML = `
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <b>BÊN BÁN (CUNG ỨNG):</b><br>
+                        Tập đoàn Aegis Tactical & Defense Systems<br>
+                        Chỉ huy sở: Phân hiệu ĐH GTVT tại TP.HCM (UTC2)<br>
+                        Hotline: 1900 6651 | Email: command@aegis-defense.mil
+                    </div>
+                    <div class="col-6">
+                        <b>BÊN MUA (TIẾP NHẬN):</b><br>
+                        <b>Sĩ quan:</b> ${officerName} (${officerRank})<br>
+                        <b>Đơn vị/Quốc gia:</b> ${nation}<br>
+                        <b>Căn cứ nhận:</b> ${baseAddress}, ${baseCity}<br>
+                        <b>Liên lạc:</b> ${officerPhone} | ${officerEmail}
+                    </div>
+                </div>
+
+                <h6 style="font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; margin-top: 15px;">DANH MỤC KHÍ TÀI BÀN GIAO:</h6>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+                    <thead style="background: #f1f5f9;">
+                        <tr>
+                            <th style="padding: 8px; border: 1px solid #e2e8f0;">Tên Vũ Khí / Khí Tài</th>
+                            <th style="padding: 8px; border: 1px solid #e2e8f0; text-align: center;">SL</th>
+                            <th style="padding: 8px; border: 1px solid #e2e8f0; text-align: right;">Đơn Giá</th>
+                            <th style="padding: 8px; border: 1px solid #e2e8f0; text-align: right;">Thành Tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${cartItems.map(item => {
+                            const p = getProductById(item.id);
+                            return `
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #e2e8f0;">${p.name} (${p.natoCode || 'NATO'})</td>
+                                    <td style="padding: 8px; border: 1px solid #e2e8f0; text-align: center;">${item.quantity}</td>
+                                    <td style="padding: 8px; border: 1px solid #e2e8f0; text-align: right;">${formatCurrency(p.price)}</td>
+                                    <td style="padding: 8px; border: 1px solid #e2e8f0; text-align: right;">${formatCurrency(p.price * item.quantity)}</td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    </tbody>
+                </table>
+
+                <div style="text-align: right; font-size: 15px; margin-bottom: 15px;">
+                    <div>Tạm tính: <b>${formatCurrency(totals.subtotal)}</b></div>
+                    ${totals.discountAmount > 0 ? `<div style="color: #16a34a;">Giảm giá ưu đãi (${totals.couponCode}): <b>-${formatCurrency(totals.discountAmount)}</b></div>` : ''}
+                    <div>Vận tải chuyên dụng: <b>${totals.shipping === 0 ? 'Miễn phí' : formatCurrency(totals.shipping)}</b></div>
+                    <div style="font-size: 18px; color: #d97706; margin-top: 6px;">TỔNG THANH TOÁN: <b>${formatCurrency(totals.grandTotal)}</b></div>
+                </div>
+
+                <p style="font-size: 12px; color: #64748b; font-style: italic;">
+                    * Lưu ý: Hợp đồng điện tử này có hiệu lực ngay khi ký. Đội tàu vận tải quân sự sẽ tiến hành lập lịch chuyển giao khí tài trong vòng 48 giờ làm việc.
+                </p>
+            `;
+
+            // Open Modal
+            document.getElementById('contract-modal').classList.add('active');
+            document.body.classList.add('modal-open');
+
+            // Sound
+            SoundEngine.playSuccessChime();
+
+            // Clear Cart
+            CartEngine.clearCart();
+        }
+
+        function closeContractModal() {
+            document.getElementById('contract-modal').classList.remove('active');
+            document.body.classList.remove('modal-open');
+            window.location.href = 'index.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCheckoutPage();
+        });
+    </script>
+</body>
+
+</html>

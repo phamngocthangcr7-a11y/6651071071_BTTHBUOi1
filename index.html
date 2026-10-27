@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AEGIS Tactical & Defense Systems - Hệ thống Cung ứng Khí tài & Vũ khí Quân sự Tối tân nhất Thế giới">
+    <meta name="keywords" content="Aegis, vũ khí quân sự, khí tài quốc phòng, tên lửa, patriot, UAV, xe tăng, súng trường NGSW, UTC2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AEGIS DEFENSE | Hệ Thống Thương Mại Khí Tài Quân Sự Tối Tân</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/responsive.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+        <div class="loader-text">AEGIS DEFENSE COMMAND INITIALIZING...</div>
+    </div>
+
+    <!-- Humberger Menu Begin (Mobile Off-canvas) -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="Aegis Defense Logo"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span id="mobile-wishlist-count" class="wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span id="mobile-cart-count" class="cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <span><i class="fa-solid fa-flag"></i> Tiếng Việt</span>
+            </div>
+            <div class="header__top__right__auth" style="margin-top: 10px;">
+                <a href="checkout.html"><i class="fa-solid fa-user-shield"></i> Cổng Sĩ Quan Mua Sắm</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                <li><a href="#">TRANG CON</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                        <li><a href="checkout.html">Thủ Tục Thanh Toán</a></li>
+                        <li><a href="blog-details.html?id=1">Chi Tiết Tin Quân Sự</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="humberger__menu__contact" style="margin-top: 20px;">
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> command@aegis-defense.mil</li>
+                <li>Miễn phí vận tải quân sự từ $100,000</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-satellite-dish"></i> command@aegis-defense.mil</li>
+                                <li><i class="fa-solid fa-truck-plane"></i> Miễn phí vận tải quân sự chuyên dụng từ $100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <span><i class="fa-solid fa-shield"></i> Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt (VN)</a></li>
+                                    <li><a href="#">English (NATO)</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="checkout.html"><i class="fa-solid fa-id-badge"></i> Đăng Nhập Sĩ Quan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                            <li><a href="#">TRANG CON</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                                    <li><a href="checkout.html">Ký Kết Thanh Toán</a></li>
+                                    <li><a href="blog-details.html?id=1">Báo Cáo Tác Chiến</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="shop-grid.html" title="Danh sách theo dõi tác chiến"><i class="fa-solid fa-heart"></i> <span id="wishlist-count" class="wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html" title="Giỏ hàng khí tài"><i class="fa-solid fa-bag-shopping"></i> <span id="cart-count" class="cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng ngân sách: <span id="header-cart-total" class="header-cart-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>DANH MỤC KHÍ TÀI</span>
+                            <i class="fa-solid fa-angle-down arrow_down"></i>
+                        </div>
+                        <ul>
+                            <li><a href="shop-grid.html?category=air-defense"><i class="fa-solid fa-radar"></i> Phòng không & Radar</a></li>
+                            <li><a href="shop-grid.html?category=missiles"><i class="fa-solid fa-rocket"></i> Tên lửa & Pháo phản lực</a></li>
+                            <li><a href="shop-grid.html?category=uav"><i class="fa-solid fa-plane-up"></i> UAV Trinh sát & Drone AI</a></li>
+                            <li><a href="shop-grid.html?category=stealth-fighter"><i class="fa-solid fa-jet-fighter"></i> Tiêm kích Tàng hình Gen 5</a></li>
+                            <li><a href="shop-grid.html?category=mbt"><i class="fa-solid fa-shield-halved"></i> Xe tăng Chủ lực (MBT)</a></li>
+                            <li><a href="shop-grid.html?category=armored-artillery"><i class="fa-solid fa-truck-monster"></i> Thiết giáp & Pháo tự hành</a></li>
+                            <li><a href="shop-grid.html?category=infantry-ngsw"><i class="fa-solid fa-gun"></i> Vũ khí Cá nhân (NGSW)</a></li>
+                            <li><a href="shop-grid.html?category=combat-robot"><i class="fa-solid fa-robot"></i> Robot Chiến đấu Tự hành AI</a></li>
+                            <li><a href="shop-grid.html?category=electronic-warfare"><i class="fa-solid fa-bolt-lightning"></i> Tác chiến Điện tử & Laser</a></li>
+                            <li><a href="shop-grid.html?category=night-vision"><i class="fa-solid fa-glasses"></i> Kính Nhìn đêm & Ảnh nhiệt</a></li>
+                            <li><a href="shop-grid.html?category=tactical-gear"><i class="fa-solid fa-vest"></i> Giáp Chống đạn & Đặc nhiệm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="shop-grid.html" method="GET">
+                                <div class="hero__search__categories">
+                                    <select name="category">
+                                        <option value="all">Tất cả danh mục</option>
+                                        <option value="air-defense">Phòng không & Tên lửa</option>
+                                        <option value="uav">UAV & Drone Cảm tử</option>
+                                        <option value="mbt">Tăng thiết giáp</option>
+                                        <option value="infantry-ngsw">Vũ khí Bộ binh NGSW</option>
+                                        <option value="electronic-warfare">Tác chiến Laser & Radar</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="search" placeholder="Nhập tên vũ khí, mã định danh NATO, quốc gia..." autocomplete="off">
+                                <button type="submit" class="site-btn">TÌM KIẾM</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>1900 6651</h5>
+                                <span>HỖ TRỢ TÁC CHIẾN 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="Images/hero-banner.jpg">
+                        <div class="hero__text">
+                            <span>CÔNG NGHỆ QUỐC PHÒNG 2026</span>
+                            <h2>KHÍ TÀI TỐI TÂN <br />CHUẨN TÁC CHIẾN HIỆN ĐẠI</h2>
+                            <p>Cung cấp giải pháp phòng thủ đa tầng, vũ khí công nghệ cao & mô hình quân sự chính ngạch cho liên minh quốc tế.</p>
+                            <div class="hero-btn-group">
+                                <a href="shop-grid.html" class="primary-btn">KHÁM PHÁ NGAY</a>
+                                <a href="javascript:void(0)" class="site-btn site-btn-accent open-combat-video-btn" data-src="Videos/hero-combat-demo.mp4">
+                                    <i class="fa-solid fa-play"></i> XEM VIDEO THỰC CHIẾN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider-wrapper">
+                    <button class="slider-nav-btn categories__slider__prev" aria-label="Lùi lại"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="categories__slider">
+                        <div class="categories__item set-bg" data-setbg="Images/cat-air-defense.jpg">
+                            <h5><a href="shop-grid.html?category=air-defense">PHÒNG KHÔNG TẦM XA</a></h5>
+                        </div>
+                        <div class="categories__item set-bg" data-setbg="Images/cat-uav.jpg">
+                            <h5><a href="shop-grid.html?category=uav">UAV & DRONE AI</a></h5>
+                        </div>
+                        <div class="categories__item set-bg" data-setbg="Images/cat-armor.jpg">
+                            <h5><a href="shop-grid.html?category=mbt">TĂNG THIẾT GIÁP</a></h5>
+                        </div>
+                        <div class="categories__item set-bg" data-setbg="Images/cat-infantry.jpg">
+                            <h5><a href="shop-grid.html?category=infantry-ngsw">VŨ KHÍ CÁ NHÂN NGSW</a></h5>
+                        </div>
+                        <div class="categories__item set-bg" data-setbg="Images/cat-electronic-warfare.jpg">
+                            <h5><a href="shop-grid.html?category=electronic-warfare">TÁC CHIẾN ĐIỆN TỬ</a></h5>
+                        </div>
+                    </div>
+                    <button class="slider-nav-btn categories__slider__next" aria-label="Tiến tới"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Khí Tài Quân Sự Nổi Bật</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Tất cả</li>
+                            <li data-filter=".air-defense">Phòng không & Tên lửa</li>
+                            <li data-filter=".uav-air">UAV & Không quân</li>
+                            <li data-filter=".armor">Tăng thiết giáp</li>
+                            <li data-filter=".infantry-robot">Vũ khí Cá nhân & Robot AI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <!-- Item 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix air-defense">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-1.jpg">
+                            <span class="product__badge">MIM-104F</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="1" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="1" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="1" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=1">Tổ hợp Tên lửa Patriot PAC-3 MSE</a></h6>
+                            <h5>$4,100,000 <span>$4,500,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix air-defense">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-2.jpg">
+                            <span class="product__badge">S-500 600KM</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="2" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="2" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="2" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=2">Phòng thủ Không gian S-500 Prometey</a></h6>
+                            <h5>$6,500,000 <span>$7,200,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix air-defense">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-3.jpg">
+                            <span class="product__badge">M142 HIMARS</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="3" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="3" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="3" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=3">Pháo phản lực Phóng loạt M142 HIMARS</a></h6>
+                            <h5>$3,800,000 <span>$4,200,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix air-defense">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-4.jpg">
+                            <span class="product__badge">LASER 100kW</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="4" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="4" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="4" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=4">Hệ thống Laser Phòng không Iron Beam</a></h6>
+                            <h5>$2,900,000 <span>$3,500,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix uav-air">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-5.jpg">
+                            <span class="product__badge">STEALTH GEN 5</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="5" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="5" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="5" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=5">Tiêm kích Tàng hình F-35A Block 4</a></h6>
+                            <h5>$82,000,000 <span>$89,000,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix uav-air">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-6.jpg">
+                            <span class="product__badge">MALE 40H</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="6" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="6" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="6" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=6">UAV Tấn công MQ-9B SkyGuardian</a></h6>
+                            <h5>$28,000,000 <span>$32,000,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix armor">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-9.jpg">
+                            <span class="product__badge">130MM GUN</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="9" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="9" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="9" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=9">Xe tăng Chủ lực KF51 Panther 130mm</a></h6>
+                            <h5>$15,500,000 <span>$17,000,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix infantry-robot">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-13.jpg">
+                            <span class="product__badge">NGSW 6.8MM</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="13" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="13" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="13" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=13">Súng trường NGSW SIG Sauer XM7</a></h6>
+                            <h5>$9,500 <span>$11,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix infantry-robot">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-14.jpg">
+                            <span class="product__badge">AI ROBOT</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="14" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="14" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="14" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=14">Robot Chiến đấu Bốn chân Ghost Vision 60</a></h6>
+                            <h5>$165,000 <span>$190,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix infantry-robot">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-16.jpg">
+                            <span class="product__badge">NVG 97 DEG</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="16" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="16" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="16" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=16">Kính Nhìn đêm 4 Ống L3Harris GPNVG-18</a></h6>
+                            <h5>$42,000 <span>$48,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix armor">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-10.jpg">
+                            <span class="product__badge">SEPv4 MBT</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="10" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="10" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="10" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=10">Xe tăng Chủ lực M1A2 Abrams SEPv4</a></h6>
+                            <h5>$14,200,000 <span>$16,000,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix uav-air">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="Images/weapon-7.jpg">
+                            <span class="product__badge">LOITERING</span>
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="javascript:void(0)" class="add-to-wishlist-btn" data-id="7" title="Theo dõi mục tiêu"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="javascript:void(0)" class="quick-view-btn" data-id="7" title="Xem nhanh thông số"><i class="fa-solid fa-eye"></i></a></li>
+                                <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="7" title="Thêm vào giỏ khí tài"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="shop-details.html?id=7">Drone Cảm tử Switchblade 600</a></h6>
+                            <h5>$180,000 <span>$210,000</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Section Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <a href="shop-details.html?id=4"><img src="Images/banner-1.jpg" alt="Tổ hợp Laser Iron Beam"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <a href="shop-details.html?id=14"><img src="Images/banner-2.jpg" alt="Robot Chiến đấu Vision 60"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Latest Product Section Begin (3 Columns Ogani) -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Latest Products -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Khí Tài Mới Nhất</h4>
+                        <div class="latest-product__slider-nav">
+                            <span class="latest-product__btn-prev"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="latest-product__btn-next"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <div class="latest-product__slider">
+                            <div class="latest-product__slider__item">
+                                <a href="shop-details.html?id=1" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-1.jpg" alt="Patriot PAC-3">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Patriot PAC-3 MSE Hit-to-Kill</h6>
+                                        <span>$4,100,000</span> <span class="lp-old">$4,500,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=5" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-5.jpg" alt="F-35A Block 4">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>F-35A Lightning II Block 4</h6>
+                                        <span>$82,000,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=9" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-9.jpg" alt="KF51 Panther">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Xe tăng Chủ lực KF51 Panther</h6>
+                                        <span>$15,500,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-product__slider__item" style="display: none;">
+                                <a href="shop-details.html?id=13" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-13.jpg" alt="SIG Sauer XM7">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Súng trường SIG Sauer XM7 NGSW</h6>
+                                        <span>$9,500</span> <span class="lp-old">$11,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=8" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-8.jpg" alt="Bayraktar Kızılelma">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tiêm kích Tự hành AI Kızılelma</h6>
+                                        <span>$22,000,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=12" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-12.jpg" alt="CAESAR 8x8">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Pháo Tự hành CAESAR 8x8 MkII</h6>
+                                        <span>$5,200,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Top Rated Products -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Đánh Giá Cao Nhất</h4>
+                        <div class="latest-product__slider-nav">
+                            <span class="latest-product__btn-prev"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="latest-product__btn-next"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <div class="latest-product__slider">
+                            <div class="latest-product__slider__item">
+                                <a href="shop-details.html?id=3" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-3.jpg" alt="M142 HIMARS">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Pháo phản lực M142 HIMARS</h6>
+                                        <span>$3,800,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=2" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-2.jpg" alt="S-500 Prometey">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tổ hợp Không gian S-500 Prometey</h6>
+                                        <span>$6,500,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=16" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-16.jpg" alt="GPNVG-18">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Kính Nhìn đêm GPNVG-18 97 Độ</h6>
+                                        <span>$42,000</span> <span class="lp-old">$48,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-product__slider__item" style="display: none;">
+                                <a href="shop-details.html?id=10" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-10.jpg" alt="M1A2 SEPv4">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Xe tăng Chủ lực M1A2 SEPv4</h6>
+                                        <span>$14,200,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=4" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-4.jpg" alt="Iron Beam">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tổ hợp Phòng không Laser Iron Beam</h6>
+                                        <span>$2,900,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=17" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-17.jpg" alt="B-21 Raider">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Oanh tạc cơ Tàng hình B-21 Raider</h6>
+                                        <span>$750,000,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Review / Spotlight Products -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Khí Tài Tiêu Điểm</h4>
+                        <div class="latest-product__slider-nav">
+                            <span class="latest-product__btn-prev"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="latest-product__btn-next"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <div class="latest-product__slider">
+                            <div class="latest-product__slider__item">
+                                <a href="shop-details.html?id=14" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-14.jpg" alt="Vision 60">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Robot Bốn chân Ghost Vision 60</h6>
+                                        <span>$165,000</span> <span class="lp-old">$190,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=6" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-6.jpg" alt="MQ-9B">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>UAV Trinh sát MQ-9B SkyGuardian</h6>
+                                        <span>$28,000,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=11" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-11.jpg" alt="K2 Black Panther">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Xe tăng K2 Black Panther (ISU)</h6>
+                                        <span>$11,800,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-product__slider__item" style="display: none;">
+                                <a href="shop-details.html?id=7" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-7.jpg" alt="Switchblade 600">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>UAV Cảm tử Switchblade 600</h6>
+                                        <span>$180,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=15" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-15.jpg" alt="DroneGun">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Súng Chế áp Điện tử DroneGun</h6>
+                                        <span>$45,000</span>
+                                    </div>
+                                </a>
+                                <a href="shop-details.html?id=18" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="Images/weapon-18.jpg" alt="Type 055">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Khu trục hạm Tên lửa Type 055</h6>
+                                        <span>$920,000,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Tin Tức & Báo Cáo Chiến Thuật</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="Images/blog-1.jpg" alt="Chiến lược UAV cảm tử">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa-regular fa-calendar"></i> 26 Tháng 10, 2026</li>
+                                <li><i class="fa-regular fa-comment"></i> 18 Bình luận</li>
+                            </ul>
+                            <h5><a href="blog-details.html?id=1">Chiến Lược Tác Chiến UAV Cảm Tử: Đột Phá Phòng Thủ Đa Tầng 2026</a></h5>
+                            <p>Sự bùng nổ của đạn tuần kích và drone AI giá rẻ đang định hình lại toàn bộ học thuyết tác chiến mặt đất thế kỷ 21.</p>
+                            <a href="blog-details.html?id=1" class="read-more">ĐỌC CHI TIẾT →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="Images/blog-2.jpg" alt="Kỷ nguyên vũ khí laser">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa-regular fa-calendar"></i> 20 Tháng 10, 2026</li>
+                                <li><i class="fa-regular fa-comment"></i> 24 Bình luận</li>
+                            </ul>
+                            <h5><a href="blog-details.html?id=2">Kỷ Nguyên Laser Iron Beam: Đánh Chặn Siêu Tốc Chi Phí $3.50/Phát</a></h5>
+                            <p>Vũ khí năng lượng định hướng 100kW chính thức thực chiến, giải quyết triệt để bài toán kinh tế trong phòng thủ tên lửa.</p>
+                            <a href="blog-details.html?id=2" class="read-more">ĐỌC CHI TIẾT →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="Images/blog-3.jpg" alt="Robot chiến đấu AI">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa-regular fa-calendar"></i> 15 Tháng 10, 2026</li>
+                                <li><i class="fa-regular fa-comment"></i> 15 Bình luận</li>
+                            </ul>
+                            <h5><a href="blog-details.html?id=3">Robot Chiến Đấu AI: Khi Chó Robot Dẫn Đầu Đột Kích Đô Thị</a></h5>
+                            <p>Đột phá công nghệ tự hành giúp UGV bốn chân đi đầu vào các boongke hiểm hóc, giảm thiểu 80% rủi ro cho bộ binh.</p>
+                            <a href="blog-details.html?id=3" class="read-more">ĐỌC CHI TIẾT →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Chỉ huy sở:</b> Phân hiệu ĐH GTVT tại TP.HCM (UTC2)</li>
+                            <li><b>Địa chỉ:</b> Số 450-451 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><b>Đường dây nóng:</b> 1900 6651</li>
+                            <li><b>Mật mã liên lạc:</b> command@aegis-defense.mil</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên Kết Chiến Lược</h6>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ Tác Chiến</a></li>
+                            <li><a href="shop-grid.html">Kho Khí Tài Quốc Phòng</a></li>
+                            <li><a href="shoping-cart.html">Giỏ Hàng Quân Sự</a></li>
+                            <li><a href="checkout.html">Ký Hợp Đồng Quốc Phòng</a></li>
+                            <li><a href="blog.html">Báo Cáo Tình Báo</a></li>
+                            <li><a href="contact.html">Bản Đồ Căn Cứ</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Tiêu Chuẩn NATO STANAG</a></li>
+                            <li><a href="#">Quy Trình Kiểm Định Hỏa Lực</a></li>
+                            <li><a href="#">Bảo Mật Hợp Đồng Cấp 1</a></li>
+                            <li><a href="#">Vận Tải Quân Sự Hàng Không</a></li>
+                            <li><a href="#">Hỗ Trợ Kỹ Thuật Vũ Khí</a></li>
+                            <li><a href="#">Cổng Sĩ Quan Mua Sắm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Bản Tin Tình Báo Quốc Phòng</h6>
+                        <p>Đăng ký nhận thông báo về các lô khí tài mới nhất và tài liệu phân tích chiến thuật mật.</p>
+                        <form action="javascript:void(0)" onsubmit="CartEngine.showToast('Đã đăng ký nhận bản tin quân sự thành công!', 'success')">
+                            <input type="email" placeholder="Nhập địa chỉ email sĩ quan..." required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Thiết kế bài tập thực hành Thiết kế Web - <a href="https://utc2.edu.vn" target="_blank">UTC2</a> | Sinh viên thực hiện: MSSV 6651071071</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts Section -->
+    <script src="Scripts/products-data.js"></script>
+    <script src="Scripts/cart-engine.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+
+</html>

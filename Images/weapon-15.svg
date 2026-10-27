@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_grad_DRONEGUN_TACTICAL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#152015" />
+    </linearGradient>
+    <pattern id="grid_DRONEGUN_TACTICAL" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.4"/>
+      <circle cx="25" cy="25" r="0.8" fill="#d97706" fill-opacity="0.6"/>
+    </pattern>
+    <radialGradient id="glow_DRONEGUN_TACTICAL" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="500" height="320" fill="url(#bg_grad_DRONEGUN_TACTICAL)"/>
+  <rect width="500" height="320" fill="url(#grid_DRONEGUN_TACTICAL)"/>
+  <circle cx="250" cy="150" r="120" fill="url(#glow_DRONEGUN_TACTICAL)"/>
+
+  <circle cx="250" cy="150" r="85" fill="none" stroke="#d97706" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="6 4"/>
+  <circle cx="250" cy="150" r="45" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="250" y1="30" x2="250" y2="75" stroke="#d97706" stroke-width="1.2" stroke-opacity="0.6"/>
+  <line x1="250" y1="225" x2="250" y2="270" stroke="#d97706" stroke-width="1.2" stroke-opacity="0.6"/>
+  <line x1="130" y1="150" x2="175" y2="150" stroke="#d97706" stroke-width="1.2" stroke-opacity="0.6"/>
+  <line x1="325" y1="150" x2="370" y2="150" stroke="#d97706" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <path d="M 15 35 L 15 15 L 35 15" fill="none" stroke="#d97706" stroke-width="2"/>
+  <path d="M 485 35 L 485 15 L 465 15" fill="none" stroke="#d97706" stroke-width="2"/>
+  <path d="M 15 285 L 15 305 L 35 305" fill="none" stroke="#d97706" stroke-width="2"/>
+  <path d="M 485 285 L 485 305 L 465 305" fill="none" stroke="#d97706" stroke-width="2"/>
+
+  
+            <g transform='translate(250, 150) scale(1.5)'>
+                <path d='M-70,10 L-50,10 L-40,-5 L35,-5 L75,-5 L75,2 L40,2 L35,15 L25,15 L20,3 L-20,3 L-30,25 L-40,25 L-35,10 Z' fill='#334155' stroke='#64748b' stroke-width='2'/>
+                <rect x='-15' y='-20' width='45' height='12' rx='2' fill='#d97706' stroke='#f8fafc' stroke-width='1'/>
+                <circle cx='-12' cy='-14' r='4' fill='#38bdf8'/>
+                <circle cx='27' cy='-14' r='4' fill='#38bdf8'/>
+                <polygon points='5,3 -2,30 12,32 15,3' fill='#1e293b'/>
+                <rect x='75' y='-8' width='30' height='12' rx='2' fill='#0f172a'/>
+            </g>
+        
+
+  <rect x="20" y="18" width="135" height="20" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <circle cx="30" cy="28" r="4" fill="#22c55e"/>
+  <text x="40" y="32" font-family="'Chakra Petch', 'Segoe UI', monospace" font-size="10" font-weight="bold" fill="#f8fafc" letter-spacing="1">DRONEGUN TACTICAL</text>
+
+  <rect x="350" y="18" width="130" height="20" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="415" y="32" text-anchor="middle" font-family="'Chakra Petch', 'Segoe UI', monospace" font-size="9.5" fill="#38bdf8" font-weight="bold">Úc (DroneShield)</text>
+
+  <rect x="20" y="280" width="460" height="26" rx="4" fill="#0b1320" fill-opacity="0.85" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="297" font-family="'Chakra Petch', 'Cairo', sans-serif" font-size="11" font-weight="bold" fill="#d97706" letter-spacing="0.5">AEGIS TACTICAL</text>
+  <text x="470" y="297" text-anchor="end" font-family="'Chakra Petch', 'Cairo', sans-serif" font-size="10.5" fill="#94a3b8">Tác chiến Điện tử Cầm tay</text>
+</svg>

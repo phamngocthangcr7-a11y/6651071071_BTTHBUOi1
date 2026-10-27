@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AEGIS Tactical & Defense Systems - Giỏ Hàng Khí Tài Quân Sự">
+    <meta name="keywords" content="Aegis, giỏ hàng, hợp đồng quân sự, thanh toán">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giỏ Hàng Khí Tài | AEGIS DEFENSE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/responsive.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+        <div class="loader-text">AEGIS DEFENSE COMMAND INITIALIZING...</div>
+    </div>
+
+    <!-- Humberger Menu Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="Aegis Defense Logo"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                <li class="active"><a href="#">TRANG CON</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                        <li><a href="checkout.html">Thủ Tục Thanh Toán</a></li>
+                        <li><a href="blog-details.html?id=1">Chi Tiết Tin Quân Sự</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-satellite-dish"></i> command@aegis-defense.mil</li>
+                                <li><i class="fa-solid fa-truck-plane"></i> Miễn phí vận tải quân sự chuyên dụng từ $100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <span><i class="fa-solid fa-shield"></i> Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt (VN)</a></li>
+                                    <li><a href="#">English (NATO)</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="checkout.html"><i class="fa-solid fa-id-badge"></i> Đăng Nhập Sĩ Quan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                            <li class="active"><a href="#">TRANG CON</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                                    <li><a href="checkout.html">Ký Kết Thanh Toán</a></li>
+                                    <li><a href="blog-details.html?id=1">Báo Cáo Tác Chiến</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">TIN QUÂN SỰ</a></li>
+                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/hero-banner.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>GIỎ HÀNG KHÍ TÀI</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">TRANG CHỦ</a>
+                            <span>GIỎ HÀNG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shoping Cart Section Begin -->
+    <section class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Khí Tài Quân Sự</th>
+                                    <th>Đơn Giá</th>
+                                    <th>Số Lượng</th>
+                                    <th>Thành Tiền</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-table-body">
+                                <!-- Populated dynamically from CartEngine -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="shop-grid.html" class="primary-btn cart-btn"><i class="fa-solid fa-arrow-left"></i> TIẾP TỤC CHỌN KHÍ TÀI</a>
+                        <a href="javascript:void(0)" class="primary-btn cart-btn cart-btn-right" id="update-cart-btn"><i class="fa-solid fa-rotate"></i> CẬP NHẬT GIỎ HÀNG</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__discount">
+                        <h5>Mã Ưu Đãi Quân Sự (Coupon Code)</h5>
+                        <form id="coupon-form" onsubmit="event.preventDefault(); applyCouponHandler();">
+                            <input type="text" id="coupon-code-input" placeholder="Nhập mã ưu đãi (Gợi ý: UTC2 hoặc NATO2026)">
+                            <button type="submit" class="site-btn">ÁP DỤNG MÃ</button>
+                        </form>
+                        <div id="coupon-status-box" style="margin-top: 10px; font-size: 13px;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>TỔNG KẾT NGÂN SÁCH MUA SẮM</h5>
+                        <ul>
+                            <li>Tạm tính <span id="cart-subtotal">$0.00</span></li>
+                            <li>Ưu đãi giảm giá <span id="cart-discount" style="color: #16a34a;">-$0.00</span></li>
+                            <li>Vận tải quân sự chuyên dụng <span id="cart-shipping">Miễn phí</span></li>
+                            <li style="font-size: 18px; border-top: 2px solid #cbd5e1; padding-top: 10px;">
+                                <b>TỔNG THANH TOÁN</b> <span id="cart-grandtotal" style="color: #d97706; font-size: 22px;">$0.00</span>
+                            </li>
+                        </ul>
+                        <a href="checkout.html" class="primary-btn" id="proceed-checkout-btn">TIẾN HÀNH KÝ HỢP ĐỒNG & THANH TOÁN →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shoping Cart Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Chỉ huy sở:</b> Phân hiệu ĐH GTVT tại TP.HCM (UTC2)</li>
+                            <li><b>Địa chỉ:</b> Số 450-451 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><b>Đường dây nóng:</b> 1900 6651</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên Kết Chiến Lược</h6>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ Tác Chiến</a></li>
+                            <li><a href="shop-grid.html">Kho Khí Tài Quốc Phòng</a></li>
+                            <li><a href="checkout.html">Ký Hợp Đồng Quốc Phòng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Bản Tin Tình Báo Quốc Phòng</h6>
+                        <form action="javascript:void(0)" onsubmit="CartEngine.showToast('Đã đăng ký nhận bản tin quân sự thành công!', 'success')">
+                            <input type="email" placeholder="Nhập địa chỉ email sĩ quan..." required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Bài tập thực hành Thiết kế Web - <a href="https://utc2.edu.vn" target="_blank">UTC2</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts Section -->
+    <script src="Scripts/products-data.js"></script>
+    <script src="Scripts/cart-engine.js"></script>
+    <script src="Scripts/main.js"></script>
+
+    <!-- Page Specific Script for shoping-cart.html -->
+    <script>
+        function renderCartTable() {
+            const tbody = document.getElementById('cart-table-body');
+            const cartItems = CartEngine.getCart();
+
+            if (!tbody) return;
+
+            if (cartItems.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5" style="padding: 60px 0; text-align: center;">
+                            <i class="fa-solid fa-box-open fa-3x" style="color: #94a3b8; margin-bottom: 15px;"></i>
+                            <h4 style="color: #475569;">Kho khí tài mua sắm của bạn đang trống</h4>
+                            <p style="color: #94a3b8;">Chưa có vũ khí nào được thêm vào danh mục hợp đồng.</p>
+                            <a href="shop-grid.html" class="primary-btn" style="margin-top: 10px;">TIẾP TỤC KHÁM PHÁ KHO KHÍ TÀI</a>
+                        </td>
+                    </tr>
+                `;
+                updateSummaryDisplay();
+                return;
+            }
+
+            tbody.innerHTML = cartItems.map(item => {
+                const product = getProductById(item.id);
+                if (!product) return '';
+                const totalItemPrice = product.price * item.quantity;
+
+                return `
+                    <tr data-id="${product.id}">
+                        <td class="shoping__cart__item">
+                            <img src="${product.image}" alt="${product.name}" onerror="this.src='${generateFallbackImage(product)}'">
+                            <div>
+                                <span class="badge bg-dark" style="font-size: 10px; margin-bottom: 4px;">${product.natoCode || 'NATO'}</span>
+                                <h5><a href="shop-details.html?id=${product.id}">${product.name}</a></h5>
+                            </div>
+                        </td>
+                        <td class="shoping__cart__price">
+                            ${formatCurrency(product.price)}
+                        </td>
+                        <td class="shoping__cart__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <span class="dec qtybtn" onclick="updateQtyClick(${product.id}, ${item.quantity - 1})">-</span>
+                                    <input type="text" value="${item.quantity}" onchange="updateQtyInput(${product.id}, this.value)">
+                                    <span class="inc qtybtn" onclick="updateQtyClick(${product.id}, ${item.quantity + 1})">+</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="shoping__cart__total">
+                            ${formatCurrency(totalItemPrice)}
+                        </td>
+                        <td class="shoping__cart__item__close">
+                            <span onclick="CartEngine.removeFromCart(${product.id}); renderCartTable();" title="Rút bỏ khỏi đơn"><i class="fa-solid fa-xmark"></i></span>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            updateSummaryDisplay();
+        }
+
+        function updateQtyClick(id, newQty) {
+            CartEngine.updateQuantity(id, newQty);
+            renderCartTable();
+        }
+
+        function updateQtyInput(id, val) {
+            const qty = parseInt(val, 10) || 1;
+            CartEngine.updateQuantity(id, qty);
+            renderCartTable();
+        }
+
+        function updateSummaryDisplay() {
+            const totals = CartEngine.getCartTotals();
+            document.getElementById('cart-subtotal').textContent = formatCurrency(totals.subtotal);
+            
+            const discountEl = document.getElementById('cart-discount');
+            if (totals.discountAmount > 0) {
+                discountEl.textContent = `-${formatCurrency(totals.discountAmount)} (${totals.discountPercent}%)`;
+            } else {
+                discountEl.textContent = '-$0.00';
+            }
+
+            const shipEl = document.getElementById('cart-shipping');
+            shipEl.textContent = totals.shipping === 0 ? 'Miễn phí' : formatCurrency(totals.shipping);
+
+            document.getElementById('cart-grandtotal').textContent = formatCurrency(totals.grandTotal);
+
+            // Coupon status message
+            const statusBox = document.getElementById('coupon-status-box');
+            if (totals.couponCode) {
+                statusBox.innerHTML = `<span style="color: #16a34a;"><i class="fa-solid fa-check"></i> Đang áp dụng mã <b>${totals.couponCode}</b> (-${totals.discountPercent}%)</span> <a href="javascript:void(0)" onclick="CartEngine.removeCoupon(); renderCartTable();" style="color: #dc2626; margin-left: 8px;">[Gỡ mã]</a>`;
+            } else {
+                statusBox.innerHTML = '';
+            }
+        }
+
+        function applyCouponHandler() {
+            const input = document.getElementById('coupon-code-input');
+            const code = input.value.trim();
+            const res = CartEngine.applyCoupon(code);
+            if (res.success) {
+                input.value = '';
+                renderCartTable();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCartTable();
+            const updateBtn = document.getElementById('update-cart-btn');
+            if (updateBtn) {
+                updateBtn.onclick = () => {
+                    renderCartTable();
+                    CartEngine.showToast('Giỏ hàng đã được đồng bộ hóa!', 'info');
+                };
+            }
+        });
+    </script>
+</body>
+
+</html>

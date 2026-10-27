@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AEGIS Tactical & Defense Systems - Bản Tin Tình Báo & Phân Tích Chiến Lược Quân Sự">
+    <meta name="keywords" content="Aegis, tin quân sự, học thuyết tác chiến, UAV, Laser, robot">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin Quân Sự & Chiến Lược | AEGIS DEFENSE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/responsive.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+        <div class="loader-text">AEGIS DEFENSE COMMAND INITIALIZING...</div>
+    </div>
+
+    <!-- Humberger Menu Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="Aegis Defense Logo"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                <li><a href="#">TRANG CON</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                        <li><a href="checkout.html">Thủ Tục Thanh Toán</a></li>
+                        <li><a href="blog-details.html?id=1">Chi Tiết Tin Quân Sự</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="blog.html">TIN QUÂN SỰ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-satellite-dish"></i> command@aegis-defense.mil</li>
+                                <li><i class="fa-solid fa-truck-plane"></i> Miễn phí vận tải quân sự chuyên dụng từ $100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <span><i class="fa-solid fa-shield"></i> Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt (VN)</a></li>
+                                    <li><a href="#">English (NATO)</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="checkout.html"><i class="fa-solid fa-id-badge"></i> Đăng Nhập Sĩ Quan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="shop-grid.html">KHO KHÍ TÀI</a></li>
+                            <li><a href="#">TRANG CON</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi Tiết Khí Tài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ Hàng Khí Tài</a></li>
+                                    <li><a href="checkout.html">Ký Kết Thanh Toán</a></li>
+                                    <li><a href="blog-details.html?id=1">Báo Cáo Tác Chiến</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="blog.html">TIN QUÂN SỰ</a></li>
+                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span class="wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng ngân sách: <span class="header-cart-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/hero-banner.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>TIN QUÂN SỰ & CHIẾN LƯỢC</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">TRANG CHỦ</a>
+                            <span>BÁO CÁO TÌNH BÁO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4 col-md-5">
+                    <div class="blog__sidebar">
+                        <div class="blog__sidebar__search" style="margin-bottom: 40px;">
+                            <form action="javascript:void(0)" onsubmit="filterBlogBySearch()">
+                                <input type="text" id="blog-search-input" placeholder="Tìm kiếm tài liệu mật..." style="width: 100%; height: 46px; border: 1px solid #e5e7eb; padding-left: 15px; border-radius: 2px;">
+                                <button type="submit" class="site-btn" style="width: 100%; margin-top: 8px;"><i class="fa-solid fa-magnifying-glass"></i> TÌM TÀI LIỆU</button>
+                            </form>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h4>Chuyên Mục Phân Tích</h4>
+                            <ul>
+                                <li><a href="#">Tất cả chuyên mục (3)</a></li>
+                                <li><a href="#">Học thuyết Tác chiến (1)</a></li>
+                                <li><a href="#">Công nghệ Vũ khí Laser (1)</a></li>
+                                <li><a href="#">Trí tuệ Nhân tạo & Robot (1)</a></li>
+                                <li><a href="#">Tác chiến Phòng không (1)</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h4>Báo Cáo Gần Đây</h4>
+                            <div class="blog__sidebar__recent">
+                                <a href="blog-details.html?id=1" class="blog__sidebar__recent__item" style="display: flex; gap: 15px; margin-bottom: 15px;">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="Images/blog-1.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover; border-radius: 2px;">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6 style="font-size: 13px; font-weight: 700; color: #1e293b; line-height: 18px;">Chiến Lược Tác Chiến UAV Cảm Tử 2026</h6>
+                                        <span style="font-size: 11px; color: #94a3b8;"><i class="fa-regular fa-calendar"></i> 26/10/2026</span>
+                                    </div>
+                                </a>
+                                <a href="blog-details.html?id=2" class="blog__sidebar__recent__item" style="display: flex; gap: 15px; margin-bottom: 15px;">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="Images/blog-2.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover; border-radius: 2px;">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6 style="font-size: 13px; font-weight: 700; color: #1e293b; line-height: 18px;">Kỷ Nguyên Laser Iron Beam 100kW</h6>
+                                        <span style="font-size: 11px; color: #94a3b8;"><i class="fa-regular fa-calendar"></i> 20/10/2026</span>
+                                    </div>
+                                </a>
+                                <a href="blog-details.html?id=3" class="blog__sidebar__recent__item" style="display: flex; gap: 15px;">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="Images/blog-3.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover; border-radius: 2px;">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6 style="font-size: 13px; font-weight: 700; color: #1e293b; line-height: 18px;">Robot Chiến Đấu AI Đột Kích Đô Thị</h6>
+                                        <span style="font-size: 11px; color: #94a3b8;"><i class="fa-regular fa-calendar"></i> 15/10/2026</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h4>Từ Khóa Chiến Lược</h4>
+                            <div class="blog__sidebar__item__tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <a href="#" style="background: #f1f5f9; padding: 4px 10px; font-size: 12px; border-radius: 2px; color: #475569;">#UAV</a>
+                                <a href="#" style="background: #f1f5f9; padding: 4px 10px; font-size: 12px; border-radius: 2px; color: #475569;">#Laser100kW</a>
+                                <a href="#" style="background: #f1f5f9; padding: 4px 10px; font-size: 12px; border-radius: 2px; color: #475569;">#IronBeam</a>
+                                <a href="#" style="background: #f1f5f9; padding: 4px 10px; font-size: 12px; border-radius: 2px; color: #475569;">#GhostVision60</a>
+                                <a href="#" style="background: #f1f5f9; padding: 4px 10px; font-size: 12px; border-radius: 2px; color: #475569;">#PatriotPAC3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Articles List -->
+                <div class="col-lg-8 col-md-7">
+                    <div class="row" id="blog-articles-container">
+                        <!-- Loaded dynamically from BLOG_DATA -->
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="product__pagination blog__pagination">
+                            <a href="javascript:void(0)" class="active">1</a>
+                            <a href="javascript:void(0)"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.svg" alt="AEGIS Defense Logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Chỉ huy sở:</b> Phân hiệu ĐH GTVT tại TP.HCM (UTC2)</li>
+                            <li><b>Địa chỉ:</b> Số 450-451 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><b>Đường dây nóng:</b> 1900 6651</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên Kết Chiến Lược</h6>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ Tác Chiến</a></li>
+                            <li><a href="shop-grid.html">Kho Khí Tài Quốc Phòng</a></li>
+                            <li><a href="blog.html">Báo Cáo Tình Báo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Bản Tin Tình Báo</h6>
+                        <form action="javascript:void(0)" onsubmit="CartEngine.showToast('Đã đăng ký nhận bản tin quân sự thành công!', 'success')">
+                            <input type="email" placeholder="Nhập địa chỉ email sĩ quan..." required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Bảo lưu mọi quyền | Bài tập thực hành Thiết kế Web - <a href="https://utc2.edu.vn" target="_blank">UTC2</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts Section -->
+    <script src="Scripts/products-data.js"></script>
+    <script src="Scripts/cart-engine.js"></script>
+    <script src="Scripts/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('blog-articles-container');
+            if (container && window.BLOG_DATA) {
+                container.innerHTML = BLOG_DATA.map(b => `
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="${b.image}" alt="${b.title}">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa-regular fa-calendar"></i> ${b.date}</li>
+                                    <li><i class="fa-regular fa-comment"></i> ${b.commentsCount} Bình luận</li>
+                                </ul>
+                                <h5><a href="blog-details.html?id=${b.id}">${b.title}</a></h5>
+                                <p>${b.summary}</p>
+                                <a href="blog-details.html?id=${b.id}" class="read-more">ĐỌC CHI TIẾT →</a>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+
+        function filterBlogBySearch() {
+            const q = document.getElementById('blog-search-input').value.toLowerCase().trim();
+            const container = document.getElementById('blog-articles-container');
+            const matched = BLOG_DATA.filter(b => b.title.toLowerCase().includes(q) || b.summary.toLowerCase().includes(q));
+            
+            if (matched.length === 0) {
+                container.innerHTML = '<div class="col-12 text-center py-5"><h5 style="color: #64748b;">Không tìm thấy bài phân tích nào phù hợp với từ khóa.</h5></div>';
+            } else {
+                container.innerHTML = matched.map(b => `
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="${b.image}" alt="${b.title}">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa-regular fa-calendar"></i> ${b.date}</li>
+                                    <li><i class="fa-regular fa-comment"></i> ${b.commentsCount} Bình luận</li>
+                                </ul>
+                                <h5><a href="blog-details.html?id=${b.id}">${b.title}</a></h5>
+                                <p>${b.summary}</p>
+                                <a href="blog-details.html?id=${b.id}" class="read-more">ĐỌC CHI TIẾT →</a>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+    </script>
+</body>
+
+</html>
